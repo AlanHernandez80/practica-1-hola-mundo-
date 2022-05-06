@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Cuadro1, {Cuadro2} from "./components/Cuadro1";
+import Saludo, {Bye} from "./components/Saludo";
+
+let nombre = 
+{
+  name: "alan isidro"
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+            <>
+              <Saludo naming={nombre}/>
+            </>
   );
 }
 
 export default App;
+
+//jsx combinacion entre html y js
